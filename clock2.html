@@ -1,0 +1,85 @@
+<!-- 24hr countdown timer  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="clock2.css" media="screen"/>
+    <script type="text/javascript" src="clock2.js"></script>
+    <title>clock2</title>
+</head>
+<div class="container">
+<body data-new-gr-c-s-check-loaded="14.1013.0" data-gr-ext-installed="">
+    <form name="formTime">
+        <table border="0">
+            <tbody>
+                <tr>
+                    <td width="50%" rowspan="3" colspan="2">
+                        <input
+                            type="text"
+                            name="textFieldTime"
+                            size="8"
+                            style="font-size: 48pt; color: green"
+                        />
+                    </td>
+                    <td class="nums">
+                        number of minutes:
+                        <input
+                            type="text"
+                            name="textFieldNumberOfMinutesToCountDown"
+                            value="1440"
+                            size="8"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="nums">
+                        start time:
+                        <input
+                            type="text"
+                            name="textFieldTimeStart"
+                            size="8"
+                            style="border-width: 0"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="nums">
+                        stop time:
+                        <input
+                            type="text"
+                            name="textFieldTimeStop"
+                            size="8"
+                            style="border-width: 0"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            type="button"
+                            name="buttonStart"
+                            value="start"
+                            onclick="startClock()"
+                            style="font-size: 24pt"
+                        />
+                    </td>
+                    <td align="right">
+                        <input
+                            type="button"
+                            name="buttonStop"
+                            value="stop"
+                            onclick="stopClock()"
+                            style="font-size: 24pt"
+                        />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+    <script type="text/javascript">
+    startClock();
+    </script>
+</html>
